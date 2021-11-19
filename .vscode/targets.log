@@ -2,17 +2,19 @@ make.exe all --print-data-base --no-builtin-variables --no-builtin-rules --quest
 # GNU Make 4.3
 # Built for x86_64-pc-msys
 # Copyright (C) 1988-2020 Free Software Foundation, Inc.
+ 
 # License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
+ 
 
-# Make data base, printed on Thu Nov 18 09:57:10 2021
+# Make data base, printed on Fri Nov 19 21:18:43 2021
 
 # Variables
+ 
 
 # environment
-FPS_BROWSER_APP_PROFILE_STRING = Internet Explorer
-# environment
+ 
 SYSTEMDRIVE = C:
 # environment
 JAVA_HOME = C:\Program Files\Java\jdk-15
@@ -23,7 +25,7 @@ USERPROFILE = C:\Users\46739
 # environment
 LOCALAPPDATA = C:\Users\46739\AppData\Local
 # environment
-VSCODE_IPC_HOOK_EXTHOST = \\.\pipe\vscode-ipc-273a1dc0-cf0e-4356-af74-62b381b2c145-sock
+VSCODE_IPC_HOOK_EXTHOST = \\.\pipe\vscode-ipc-56583097-aa4f-4ae3-8fca-da78f91674de-sock
 # makefile (from 'Makefile', line 2)
 SRC_DIR = src
 # environment
@@ -43,9 +45,7 @@ MAKE_COMMAND := make
 # automatic
 @D = $(patsubst %/,%,$(dir $@))
 # environment
-CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_8148_SUQEDFSAMAPJYJRS
-# environment
-FPS_BROWSER_USER_PROFILE_STRING = Default
+CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_4924_ZCVUBNNJLTLHNIIR
 # environment
 VSCODE_HANDLES_UNCAUGHT_ERRORS = true
 # default
@@ -73,7 +73,7 @@ MAKEFLAGS = pqrR
 # environment
 ONEDRIVE = C:\Users\46739\OneDrive
 # makefile
-CURDIR := /c/Users/46739/Desktop/University/HT21/CPROG/dev/CPROG_Labb3
+CURDIR := /c/Users/46739/Desktop/University/HT21/CPROG/dev/CPROG_Labb4
 # environment
 VSCODE_PIPE_LOGGING = true
 # environment
@@ -87,7 +87,7 @@ MFLAGS = -pqrR
 # default
 .SHELLFLAGS := -c
 # environment
-!C: = c:\Users\46739\Desktop\University\HT21\CPROG\dev\CPROG_Labb3
+!C: = c:\Users\46739\Desktop\University\HT21\CPROG\dev\CPROG_Labb4
 # environment
 COMMONPROGRAMW6432 = C:\Program Files\Common Files
 # automatic
@@ -99,7 +99,7 @@ MAKEFILE_LIST := Makefile
 # environment
 VSCODE_VERBOSE_LOGGING = true
 # environment
-VSCODE_PID = 8148
+VSCODE_PID = 4924
 # automatic
 ?D = $(patsubst %/,%,$(dir $?))
 # automatic
@@ -139,6 +139,7 @@ COMPUTERNAME = DESKTOP-OOML6A0
 # default
 MAKEFILES := 
 # automatic
+ 
 ^F = $(notdir $^)
 # environment
 PYCHARM = C:\Program Files\JetBrains\PyCharm 2021.2\bin;
@@ -221,6 +222,7 @@ ALLUSERSPROFILE = C:\ProgramData
 # environment
 SESSIONNAME = Console
 # default
+ 
 .FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell nocomment grouped-target extra-prereqs archives jobserver output-sync check-symlink load
 # environment
 PROCESSOR_REVISION = 5e03
@@ -233,7 +235,8 @@ INCLUDE_PATHS = -IC/:msys64/mingw64/include
 # environment
 PROCESSOR_IDENTIFIER = Intel64 Family 6 Model 94 Stepping 3, GenuineIntel
 # variable set hash-table stats:
-# Load=111/1024=11%, Rehash=0, Collisions=13/150=9%
+ 
+# Load=109/1024=11%, Rehash=0, Collisions=12/148=8%
 
 # Pattern-specific Variable Values
 
@@ -241,8 +244,9 @@ PROCESSOR_IDENTIFIER = Intel64 Family 6 Model 94 Stepping 3, GenuineIntel
 
 # Directories
 
-# src (device 1546775529, inode 19703248370034434): 5 files, no impossibilities.
-# . (device 1546775529, inode 5066549580889435): 11 files, no impossibilities.
+ 
+# src (device 1546775529, inode 9851624185215004): 5 files, no impossibilities.
+# . (device 1546775529, inode 7599824371528923): 11 files, no impossibilities.
 
 # 16 files, no impossibilities in 2 directories.
 
@@ -308,12 +312,12 @@ all:
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 18 / storage = 136 B / avg = 7 B
-# current buf: size = 8162 B / used = 136 B / count = 18 / avg = 7 B
+# strcache buffers: 1 (0) / strings = 18 / storage = 134 B / avg = 7 B
+# current buf: size = 8162 B / used = 134 B / count = 18 / avg = 7 B
 
 # strcache performance: lookups = 28 / hit rate = 35%
 # hash-table stats:
 # Load=18/8192=0%, Rehash=0, Collisions=0/28=0%
-# Finished Make data base on Thu Nov 18 09:57:10 2021
+# Finished Make data base on Fri Nov 19 21:18:43 2021
 
  

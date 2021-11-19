@@ -32,9 +32,12 @@ public:
         koll();
         return *rot->hoger;
     };
+
     Trad &operator=(const Trad &);
     bool operator==(const Trad &) const;
     void skriv_ut() const;
+    void satt_in(const int &value);
+    bool sok(const int &value);
 
 private:
     class Nod
@@ -57,6 +60,8 @@ private:
             throw std::range_error("Trad");
     }
     void kopiera(const Trad &t);
+    void navigateDownTree(const int &value);
+    void navigateTreeRoot();
 };
 
 #endif /* Trad_h */

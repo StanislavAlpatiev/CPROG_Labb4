@@ -47,3 +47,62 @@ void Trad::skriv_ut() const
         h_barn().skriv_ut();
     }
 }
+
+void Trad::satt_in(const int &value)
+{
+    if (tomt)
+    {
+        Trad(value);
+    }
+    else
+    {
+        if (sok(value))
+        {
+            navigateDownTree(value);
+        }
+    }
+}
+
+void Trad::navigateDownTree(const int &value)
+{
+    if (value < rot->data && rot->vanster->rot->data == 0)
+    {
+        rot->vanster->rot->data = value;
+    }
+    else if (value > rot->data && rot->hoger->rot->data == 0)
+    {
+        rot->hoger->rot->data = value;
+    }
+    else if (value != rot->data && value < rot->data)
+    {
+        rot->vanster->navigateDownTree(value);
+    }
+    else if (value != rot->data && value > rot->data)
+    {
+        rot->hoger->navigateDownTree(value);
+    }
+    else
+    {
+        std::cout << "Value is eaqual to existing node!" << std::endl;
+    }
+}
+
+bool Trad::sok(const int &value)
+{
+    if (rot->vanster->rot->data == 0 && rot->vanster->rot->data == 0 && value != rot->data)
+    {
+        return 0;
+    }
+    else if (value == rot->data)
+    {
+        return 1;
+    }
+    else if (value != rot->data && rot->vanster && value < rot->data)
+    {
+        rot->vanster->sok(value);
+    }
+    else if (value != rot->data && rot->hoger != 0 && value > rot->data)
+    {
+        rot->hoger->sok(value);
+    }
+}
