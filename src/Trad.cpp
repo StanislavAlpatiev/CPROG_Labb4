@@ -4,8 +4,8 @@
 
 #include <iostream>
 #include "Trad.h"
-
-void Trad::kopiera(const Trad &t)
+template <typename T>
+void Trad<T>::kopiera(const Trad<T> &t)
 {
     //std::cout << "*** Trad::kopiera\n";
     if (t.tomt())
@@ -18,7 +18,8 @@ void Trad::kopiera(const Trad &t)
     }
 }
 
-Trad &Trad::operator=(const Trad &t)
+template <typename T>
+Trad<T> &Trad<T>::operator=(const Trad<T> &t)
 {
     //std::cout << "*** Trad::operator=\n";
     if (rot != t.rot)
@@ -29,7 +30,8 @@ Trad &Trad::operator=(const Trad &t)
     return *this;
 }
 
-bool Trad::operator==(const Trad &t) const
+template <typename T>
+bool Trad<T>::operator==(const Trad<T> &t) const
 {
     //std::cout << "*** Trad::operator==\n";
     return (tomt() && t.tomt()) ||
@@ -37,7 +39,8 @@ bool Trad::operator==(const Trad &t) const
             v_barn() == t.v_barn() && h_barn() == t.h_barn());
 }
 
-void Trad::skriv_ut() const
+template <typename T>
+void Trad<T>::skriv_ut() const
 {
     // traversera igenom trädet rekursivt enligt principen "in-order"
     if (!tomt())
@@ -48,7 +51,8 @@ void Trad::skriv_ut() const
     }
 }
 
-void Trad::satt_in(const int &value)
+template <typename T>
+void Trad<T>::satt_in(const T &value)
 {
     if (tomt)
     {
@@ -63,15 +67,16 @@ void Trad::satt_in(const int &value)
     }
 }
 
-void Trad::navigateDownTree(const int &value)
+template <typename T>
+void Trad<T>::navigateDownTree(const T &value)
 {
     if (value < rot->data && rot->vanster->rot->data == 0)
     {
-        rot->vanster->rot->data = value;
+        rot->vanster = new Trad(value);
     }
     else if (value > rot->data && rot->hoger->rot->data == 0)
     {
-        rot->hoger->rot->data = value;
+        rot->hoger = new Trad(value);
     }
     else if (value != rot->data && value < rot->data)
     {
@@ -81,13 +86,10 @@ void Trad::navigateDownTree(const int &value)
     {
         rot->hoger->navigateDownTree(value);
     }
-    else
-    {
-        std::cout << "Value is eaqual to existing node!" << std::endl;
-    }
 }
 
-bool Trad::sok(const int &value)
+template <typename T>
+bool Trad<T>::sok(const T &value)
 {
     if (rot->vanster->rot->data == 0 && rot->vanster->rot->data == 0 && value != rot->data)
     {

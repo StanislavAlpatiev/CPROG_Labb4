@@ -7,12 +7,13 @@
 
 #include <iostream>
 
+template <typename T>
 class Trad
 {
 
 public:
     Trad() : rot(0){}; // default konstruktor
-    Trad(int d) { rot = new Nod(d); };
+    Trad(T d) { rot = new Nod(d); };
     Trad(const Trad &t) { kopiera(t); }; // kopieringskonstruktor
     ~Trad() { delete rot; };
 
@@ -36,16 +37,17 @@ public:
     Trad &operator=(const Trad &);
     bool operator==(const Trad &) const;
     void skriv_ut() const;
-    void satt_in(const int &value);
-    bool sok(const int &value);
+    void satt_in(const T &value);
+    bool sok(const T &value);
 
 private:
+    template <typename T>
     class Nod
     {
         friend class Trad;
-        int data;
+        T data;
         Trad *vanster, *hoger;
-        Nod(int d) : data(d), vanster(new Trad), hoger(new Trad){};
+        Nod(T d) : data(d), vanster(new Trad), hoger(new Trad){};
         ~Nod()
         {
             delete vanster;
@@ -60,7 +62,7 @@ private:
             throw std::range_error("Trad");
     }
     void kopiera(const Trad &t);
-    void navigateDownTree(const int &value);
+    void navigateDownTree(const T &value);
     void navigateTreeRoot();
 };
 
