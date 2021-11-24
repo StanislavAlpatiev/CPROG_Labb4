@@ -2,19 +2,20 @@ make.exe all --print-data-base --no-builtin-variables --no-builtin-rules --quest
 # GNU Make 4.3
 # Built for x86_64-pc-msys
 # Copyright (C) 1988-2020 Free Software Foundation, Inc.
- 
 # License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
  
 
-# Make data base, printed on Fri Nov 19 21:18:43 2021
+ 
+# Make data base, printed on Mon Nov 22 12:09:25 2021
+ 
 
 # Variables
- 
 
 # environment
- 
+FPS_BROWSER_APP_PROFILE_STRING = Internet Explorer
+# environment
 SYSTEMDRIVE = C:
 # environment
 JAVA_HOME = C:\Program Files\Java\jdk-15
@@ -25,7 +26,7 @@ USERPROFILE = C:\Users\46739
 # environment
 LOCALAPPDATA = C:\Users\46739\AppData\Local
 # environment
-VSCODE_IPC_HOOK_EXTHOST = \\.\pipe\vscode-ipc-56583097-aa4f-4ae3-8fca-da78f91674de-sock
+VSCODE_IPC_HOOK_EXTHOST = \\.\pipe\vscode-ipc-c4f53db9-8089-4b9c-904f-9cd0253738ed-sock
 # makefile (from 'Makefile', line 2)
 SRC_DIR = src
 # environment
@@ -45,7 +46,9 @@ MAKE_COMMAND := make
 # automatic
 @D = $(patsubst %/,%,$(dir $@))
 # environment
-CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_4924_ZCVUBNNJLTLHNIIR
+CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_6336_TLSPAZVHCEKYCLDV
+# environment
+FPS_BROWSER_USER_PROFILE_STRING = Default
 # environment
 VSCODE_HANDLES_UNCAUGHT_ERRORS = true
 # default
@@ -91,7 +94,9 @@ MFLAGS = -pqrR
 # environment
 COMMONPROGRAMW6432 = C:\Program Files\Common Files
 # automatic
+ 
 +D = $(patsubst %/,%,$(dir $+))
+ 
 # makefile (from 'Makefile', line 1)
 MAKEFILE_LIST := Makefile
 # automatic
@@ -99,11 +104,15 @@ MAKEFILE_LIST := Makefile
 # environment
 VSCODE_VERBOSE_LOGGING = true
 # environment
-VSCODE_PID = 4924
+VSCODE_PID = 6336
 # automatic
+ 
 ?D = $(patsubst %/,%,$(dir $?))
+ 
 # automatic
+ 
 *F = $(notdir $*)
+ 
 # makefile (from 'Makefile', line 8)
 LIBRARY_PATHS = -LC/:msys64/mingw64/lib
 # automatic
@@ -139,7 +148,6 @@ COMPUTERNAME = DESKTOP-OOML6A0
 # default
 MAKEFILES := 
 # automatic
- 
 ^F = $(notdir $^)
 # environment
 PYCHARM = C:\Program Files\JetBrains\PyCharm 2021.2\bin;
@@ -177,6 +185,7 @@ OS = Windows_NT
 .DEFAULT_GOAL := all
 # default
 MAKE_VERSION := 4.3
+ 
 # makefile (from 'Makefile', line 5)
 SRC_FILES = $(wildcard $(SRC_DIR)/*.cpp)
 # environment
@@ -222,7 +231,6 @@ ALLUSERSPROFILE = C:\ProgramData
 # environment
 SESSIONNAME = Console
 # default
- 
 .FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell nocomment grouped-target extra-prereqs archives jobserver output-sync check-symlink load
 # environment
 PROCESSOR_REVISION = 5e03
@@ -236,15 +244,20 @@ INCLUDE_PATHS = -IC/:msys64/mingw64/include
 PROCESSOR_IDENTIFIER = Intel64 Family 6 Model 94 Stepping 3, GenuineIntel
 # variable set hash-table stats:
  
-# Load=109/1024=11%, Rehash=0, Collisions=12/148=8%
-
-# Pattern-specific Variable Values
-
-# No pattern-specific variable values.
-
-# Directories
+# Load=111/1024=11%, Rehash=0, Collisions=13/150=9%
+ 
 
  
+# Pattern-specific Variable Values
+ 
+
+ 
+# No pattern-specific variable values.
+ 
+
+ 
+# Directories
+
 # src (device 1546775529, inode 9851624185215004): 5 files, no impossibilities.
 # . (device 1546775529, inode 7599824371528923): 11 files, no impossibilities.
 
@@ -304,10 +317,12 @@ all:
 #  Modification time never checked.
 #  File has not been updated.
 
+ 
 # files hash-table stats:
 # Load=4/1024=0%, Rehash=0, Collisions=0/16=0%
 # VPATH Search Paths
 
+ 
 # No 'vpath' search paths.
 
 # No general ('VPATH' variable) search path.
@@ -317,7 +332,8 @@ all:
 
 # strcache performance: lookups = 28 / hit rate = 35%
 # hash-table stats:
+ 
 # Load=18/8192=0%, Rehash=0, Collisions=0/28=0%
-# Finished Make data base on Fri Nov 19 21:18:43 2021
+# Finished Make data base on Mon Nov 22 12:09:25 2021
 
  
